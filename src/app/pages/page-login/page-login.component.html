@@ -1,1 +1,22 @@
-<p>page-login works!</p>
+<mat-grid-list cols="1" rowHeight="3:1">
+  <mat-grid-tile>
+    <mat-card class="mat-card-large">
+      <mat-card-header class="header-blue">Se connecter </mat-card-header>
+      <mat-divider></mat-divider>
+      <mat-card-content class="margin-form">
+        <form>
+          <mat-form-field class="input-full-width">
+            <mat-label>User Name</mat-label>
+            <input type="text" matInput placeholder="user" />
+          </mat-form-field>
+          <mat-form-field class="input-full-width">
+            <mat-label>Password</mat-label>
+            <input type="password" matInput placeholder="password" />
+          </mat-form-field>
+          <a mat-button class="button-margin" href="#" target="">S'inscrire</a>
+          <button mat-raised-button color="primary">Se Connecter</button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

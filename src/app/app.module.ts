@@ -8,17 +8,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PageLoginComponent } from './pages/page-login/page-login.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    PageLoginComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    PageLoginComponent,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
