@@ -5,6 +5,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatButtonModule } from '@angular/material/button';
+import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-page-inscription',
   templateUrl: './page-inscription.component.html',
@@ -17,6 +18,7 @@ import { MatButtonModule } from '@angular/material/button';
     MatGridListModule,
     MatDividerModule,
     MatButtonModule,
+    RouterModule,
   ],
 })
 export class PageInscriptionComponent {}

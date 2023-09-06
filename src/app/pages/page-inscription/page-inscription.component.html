@@ -49,7 +49,12 @@
               placeholder="Confirmer mot de passe"
             />
           </mat-form-field>
-          <a mat-button class="button-margin" href="#" target=""
+          <a
+            [routerLink]="['/login']"
+            mat-button
+            class="button-margin"
+            href="#"
+            target=""
             >Se Connecter</a
           >
           <button mat-raised-button color="primary">S'inscrire</button>

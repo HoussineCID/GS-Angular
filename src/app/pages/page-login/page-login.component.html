@@ -13,7 +13,13 @@
             <mat-label>Password</mat-label>
             <input type="password" matInput placeholder="password" />
           </mat-form-field>
-          <a mat-button class="button-margin" href="#" target="">S'inscrire</a>
+          <a
+            [routerLink]="['/inscrire']"
+            mat-button
+            class="button-margin"
+            target=""
+            >S'inscrire</a
+          >
           <button mat-raised-button color="primary">Se Connecter</button>
         </form>
       </mat-card-content>
