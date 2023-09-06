@@ -1,0 +1,30 @@
+<mat-sidenav-container class="sidenav-container">
+  <!-- Menu (Sidenav) -->
+  <mat-sidenav mode="side" opened="true">
+    <!-- Contenu du menu -->
+    <mat-nav-list>
+      <a mat-list-item routerLink="/accueil">Accueil</a>
+      <a mat-list-item routerLink="/produits">Produits</a>
+      <a mat-list-item routerLink="/contact">Contact</a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <!-- Contenu de la page principale -->
+  <mat-sidenav-content>
+    <!-- En-tête (Header) -->
+    <mat-toolbar class="header">
+      <span>Mon En-tête</span>
+    </mat-toolbar>
+
+    <!-- Section -->
+    <div class="section">
+      <!-- Contenu de la section -->
+      <router-outlet></router-outlet>
+    </div>
+
+    <!-- Pied de page (Footer) -->
+    <mat-toolbar class="footer">
+      <span>Mon Pied de page</span>
+    </mat-toolbar>
+  </mat-sidenav-content>
+</mat-sidenav-container>
