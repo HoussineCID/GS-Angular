@@ -1,0 +1,15 @@
+/* Appliquez des styles pour aligner les menus et les sous-menus */
+.mat-expansion-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.panel {
+  background-color: #f5f5f5; /* Ajoutez une couleur de fond au menu principal si nécessaire */
+}
+.lien {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  border-bottom: 1px solid #ccc; /* Ajoute une bordure entre les éléments du sous-menu si nécessaire */
+}

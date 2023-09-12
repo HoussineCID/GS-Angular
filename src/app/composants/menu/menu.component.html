@@ -1,0 +1,14 @@
+<mat-expansion-panel [expanded]="false" *ngFor="let menu of menuProperties">
+  <mat-expansion-panel-header id="{{ menu.id }}" class="panel">
+    <mat-panel-title>{{ menu.titre }} </mat-panel-title>
+  </mat-expansion-panel-header>
+  <mat-nav-list id="{{ menu.id }}" *ngFor="let sousMenu of menu.sousMenu">
+    <a
+      (click)="navigate(sousMenu.url)"
+      class="lien"
+      mat-list-item
+      id="{{ sousMenu.id }}"
+      >{{ sousMenu.titre }}
+    </a>
+  </mat-nav-list>
+</mat-expansion-panel>
