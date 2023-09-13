@@ -1,6 +1,9 @@
 <mat-expansion-panel [expanded]="false" *ngFor="let menu of menuProperties">
   <mat-expansion-panel-header id="{{ menu.id }}" class="panel">
-    <mat-panel-title>{{ menu.titre }} </mat-panel-title>
+    <mat-panel-title>
+      <mat-icon>{{ menu.icon }}</mat-icon>
+      {{ menu.titre }}
+    </mat-panel-title>
   </mat-expansion-panel-header>
   <mat-nav-list id="{{ menu.id }}" *ngFor="let sousMenu of menu.sousMenu">
     <a
@@ -8,6 +11,8 @@
       class="lien"
       mat-list-item
       id="{{ sousMenu.id }}"
+    >
+      <mat-icon>{{ sousMenu.icon }}</mat-icon
       >{{ sousMenu.titre }}
     </a>
   </mat-nav-list>

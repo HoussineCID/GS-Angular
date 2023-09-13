@@ -6,6 +6,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { RouterModule } from '@angular/router';
 import { Router } from '@angular/router';
+import { MatIconModule } from '@angular/material/icon';
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
@@ -17,6 +18,7 @@ import { Router } from '@angular/router';
     MatListModule,
     MatCardModule,
     RouterModule,
+    MatIconModule,
   ],
 })
 export class MenuComponent {
@@ -24,19 +26,19 @@ export class MenuComponent {
     {
       id: '1',
       titre: 'Tableau de bord',
-      icon: '',
+      icon: 'monitoring',
       url: '',
       sousMenu: [
         {
           id: '11',
           titre: 'KPI',
-          icon: '',
+          icon: 'donut_small',
           url: '',
         },
         {
           id: '12',
           titre: 'Statistiques',
-          icon: '',
+          icon: 'bar_chart_4_bars',
           url: 'statistique',
         },
       ],
@@ -44,19 +46,19 @@ export class MenuComponent {
     {
       id: '2',
       titre: 'Articles',
-      icon: '',
+      icon: 'pallet',
       url: '',
       sousMenu: [
         {
           id: '21',
           titre: 'Articles',
-          icon: '',
+          icon: 'receipt',
           url: '',
         },
         {
           id: '22',
           titre: 'Mouvements du stock',
-          icon: '',
+          icon: 'trolley',
           url: '',
         },
       ],
@@ -64,19 +66,19 @@ export class MenuComponent {
     {
       id: '3',
       titre: 'Clients',
-      icon: '',
+      icon: 'add_business',
       url: '',
       sousMenu: [
         {
           id: '31',
           titre: 'Clients',
-          icon: '',
+          icon: 'group',
           url: '',
         },
         {
           id: '32',
           titre: 'Commandes clients',
-          icon: '',
+          icon: 'receipt_long',
           url: '',
         },
       ],
@@ -84,19 +86,19 @@ export class MenuComponent {
     {
       id: '4',
       titre: 'Fournisseurs',
-      icon: '',
+      icon: 'storefront',
       url: '',
       sousMenu: [
         {
           id: '41',
           titre: 'Fournisseurs',
-          icon: '',
+          icon: 'handshake',
           url: '',
         },
         {
           id: '42',
           titre: 'Commandes fournisseurs',
-          icon: '',
+          icon: 'receipt_long',
           url: '',
         },
       ],
@@ -104,19 +106,19 @@ export class MenuComponent {
     {
       id: '5',
       titre: 'Parametrages',
-      icon: '',
+      icon: 'settings_account_box',
       url: '',
       sousMenu: [
         {
           id: '51',
           titre: 'Categories',
-          icon: '',
+          icon: 'dynamic_feed',
           url: '',
         },
         {
           id: '52',
           titre: 'Utilisateurs',
-          icon: '',
+          icon: 'supervisor_account',
           url: '',
         },
       ],
